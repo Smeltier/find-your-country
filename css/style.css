@@ -425,13 +425,6 @@ h1 {
         padding-top: 52px;
     }
 
-    .answer-options {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .answer-button:last-child {
-        grid-column: span 2;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
