@@ -44,7 +44,11 @@ function loadState() {
 }
 
 function saveState() {
-  sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  try {
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch (error) {
+    console.error("Não foi possível salvar o progresso nesta sessão.", error);
+  }
 }
 
 function shuffle(items) {
