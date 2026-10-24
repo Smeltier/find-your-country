@@ -72,6 +72,8 @@ function beginQuiz() {
   renderQuestion();
 }
 
+window.startQuiz = beginQuiz;
+
 function renderQuestion() {
   const question = state.questions[state.current];
   if (!question) return showResults();
@@ -168,7 +170,6 @@ function exitQuiz() {
   showScreen("start");
 }
 
-elements.startButton.addEventListener("click", beginQuiz);
 elements.backButton.addEventListener("click", goBack);
 elements.exitButton.addEventListener("click", exitQuiz);
 elements.restartButton.addEventListener("click", beginQuiz);
