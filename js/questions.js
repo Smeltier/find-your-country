@@ -1,3 +1,4 @@
+(function () {
 const categoryInfo = {
   clima: { label: "Clima", description: "Temperatura e estações do ano" },
   cultura: { label: "Cultura e costumes", description: "Tradições, ritmo social e diversidade" },
@@ -97,3 +98,4 @@ const questions = Object.entries(questionsByCategory).flatMap(([category, items]
 );
 
 window.quizData = { categoryInfo, questions };
+})();

@@ -1,3 +1,4 @@
+(function () {
 const traitCategories = {
     clima: "clima_",
     cultura: "cultura_",
@@ -823,3 +824,4 @@ const countries = [
 ];
 
 window.countryData = { countries };
+})();

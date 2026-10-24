@@ -1,3 +1,4 @@
+(function () {
 const { categoryInfo, questions } = window.quizData;
 const { countries } = window.countryData;
 
@@ -182,3 +183,4 @@ if (state.screen === "quiz" && state.questions.length === TOTAL_QUESTIONS) {
   saveState();
   showScreen("start");
 }
+})();
