@@ -52,6 +52,21 @@ button {
     min-height: 100vh;
 }
 
+.site-footer {
+    align-items: center;
+    color: var(--muted);
+    display: flex;
+    font-size: .78rem;
+    gap: 4px;
+    justify-content: center;
+    padding: 0 0 24px;
+}
+
+.site-footer a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
 .screen {
     padding: 32px 0 40px;
 }
